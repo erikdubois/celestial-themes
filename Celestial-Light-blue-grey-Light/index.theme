@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Celestial-Light-blue-grey-Light
+Comment=A dark modern design theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Celestial-Light-blue-grey-Light
+MetacityTheme=Celestial-Light-blue-grey-Light
+IconTheme=Papirus-Dark
+CursorTheme=Celestial
+ButtonLayout=menu:minimize,maximize,close

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Celestial-Slate-grey-Dark
+Comment=A dark modern design theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Celestial-Slate-grey-Dark
+MetacityTheme=Celestial-Slate-grey-Dark
+IconTheme=Papirus-Dark
+CursorTheme=Celestial
+ButtonLayout=menu:minimize,maximize,close
