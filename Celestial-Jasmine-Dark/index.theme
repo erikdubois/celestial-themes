@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Celestial-Jasmine-Dark
+Comment=A dark modern design theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Celestial-Jasmine-Dark
+MetacityTheme=Celestial-Jasmine-Dark
+IconTheme=Papirus-Dark
+CursorTheme=Celestial
+ButtonLayout=menu:minimize,maximize,close
