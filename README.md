@@ -1,7 +1,7 @@
 # celestial-themes
 
-A large family of ready-to-install GTK desktop themes — **59 named colours ×
-3 modes × 3 DPI tiers = 531 themes** — covering every common Linux desktop
+A large family of ready-to-install GTK desktop themes — **65 named colours ×
+3 modes × 3 DPI tiers = 585 themes** — covering every common Linux desktop
 surface: GTK 2/3/4, GNOME Shell, Cinnamon, Unity, xfwm4, Metacity, Openbox,
 labwc and Plank.
 
@@ -33,7 +33,7 @@ index.theme
 
 ## Install
 
-Pick whichever colours you want (the repo is large — you don't need all 531).
+Pick whichever colours you want (the repo is large — you don't need all 585).
 
 ```bash
 # all of them
@@ -59,24 +59,26 @@ assets look too small.
 
 ## Colours
 
-59 named accents:
+65 named accents:
 
 ```
 Aliz              Aqua              Archlinux-blue    Arcolinux-blue
 Azul              Azure             Azure-dodger-blue Blood
 Blueberry         Blue-sky          Botticelli        Bright-lilac
 Carnation         Carolina-blue     Casablanca        Cornflower-blue
-Crimson           Darkish           Dawn              Dodger-blue
-Dracul            Emerald           Evopop            Fern
-Fire              Froly             Havelock          Hibiscus
-Light-blue-grey   Light-blue-surfn  Light-salmon      Mandy
-Mantis            Medium-blue       Niagara           Nice-blue
-Numix             Orchid            Pale-grey         Paper
-Pink              Polo              Pueril            Punch
-Purpley           Red-orange        Red-violet        Rusty-orange
-Sea               Sky-blue          Slate-grey        Smoke
-Soft-blue         Tacao             Tangerine         Tory
-Twilight          Vampire           Warm-pink
+Crimson           Darkish           Dawn              Denim
+Dodger-blue       Dracul            Emerald           Evopop
+Fern              Fire              Froly             Havelock
+Hibiscus          Jasmine           Light-blue-grey   Light-blue-surfn
+Light-salmon      Mandarin          Mandy             Mantis
+Medium-blue       Neon-blue         Niagara           Nice-blue
+Night-owl         Numix             Orchid            Pale-grey
+Paper             Pink              Polo              Pueril
+Punch             Purpley           Red-orange        Red-violet
+Rusty-orange      Sea               Sky-blue          Slateblue
+Slate-grey        Smoke             Soft-blue         Tacao
+Tangerine         Tory              Twilight          Vampire
+Warm-pink
 ```
 
 ## Icons
