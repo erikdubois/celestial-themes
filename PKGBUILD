@@ -70,7 +70,7 @@ pkgname=(
   celestial-warm-pink
 )
 pkgver=26.07
-pkgrel=01
+pkgrel=02
 pkgdesc="Celestial GTK theme recoloured with the named Arc palette"
 arch=('any')
 url="https://github.com/erikdubois/celestial-themes"
