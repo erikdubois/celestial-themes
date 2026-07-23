@@ -32,12 +32,50 @@
 - `pkgver` / `pkgrel` deliberately untouched — documentation only, no rebuild
   needed.
 
+- Added the Kvantum (Qt) themes — 195 of them, one per colour/mode, in a new
+  top-level `Kvantum/` folder. Without these, Qt apps kept whatever style Qt
+  defaults to while GTK, xfwm4 and plank all followed the picked accent. The
+  forge learned to generate them on 2026.07.21; this repo's output predates
+  that, so they simply had never been harvested.
+- The four stock colours now declare `conflicts=('celestial-gtk-theme')`.
+
+### Technical Details (Kvantum)
+
+- Generated with `celestial-theme-forge/generate-arc-colors.sh` into a fresh
+  `prepare-celestial.py` checkout. Only step 1 of the forge workflow is needed:
+  `gen_kvantum()` writes `.kvconfig` + `.svg` directly, so neither `parse_sass.sh`
+  nor the ~1h `render-all.sh` is on this path.
+- Verified before committing: for all 195 themes the `highlight.color` in the
+  generated `.kvconfig` equals the `selected_bg_color` already baked into that
+  colour's `gtk-3.0/gtk.css`. Zero mismatches — the Qt accent provably matches
+  the GTK accent rather than merely looking close.
+- Five colours (`denim`, `jasmine`, `mandarin`, `night-owl`, `slateblue`) ship
+  here but had dropped out of the forge's `COLORS` map, and the checkout that
+  built them is gone. Their accents were recovered by reading `selected_bg_color`
+  back out of the built CSS; that same read reproduces every other colour's
+  known hex exactly, which is what makes the recovery trustworthy. Added back to
+  the forge so the repo is reproducible again.
+- `indigo` is in the forge but has no GTK theme here, so it was deliberately
+  excluded — shipping a Qt theme for a colour with no GTK theme would be worse
+  than shipping neither.
+- `_install_family` installs them to `/usr/share/Kvantum`, matching celestial's
+  own `install.sh`. They are a separate tree, not part of a GTK theme folder,
+  and have no `-hdpi`/`-xhdpi` tier.
+- The `conflicts` entry is on `celestial-aliz`, `-azul`, `-pueril` and `-sea`
+  only. `celestial-gtk-theme` already owns the `/usr/share/themes` paths for
+  those four stock colours, so they already failed to install alongside it —
+  Kvantum only widened the overlap. Pacman now offers a swap instead of a hard
+  file-conflict error; the other 61 packages remain installable alongside
+  upstream.
+- `kvantum` added to `optdepends`.
+
 ### Files Modified
 
 - `README.md`
 - `PKGBUILD`
 - `.gitignore` (new)
 - `CHANGELOG.md`
+- `Kvantum/` (new — 195 theme folders)
 
 ## 2026.07.22
 

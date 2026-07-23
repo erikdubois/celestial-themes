@@ -1,9 +1,10 @@
 # celestial-themes
 
-A large family of ready-to-install GTK desktop themes — **65 named colours ×
+A large family of ready-to-install desktop themes — **65 named colours ×
 3 modes = 195 themes**, plus 390 companion folders carrying HiDPI xfwm4
-decorations. Each theme covers every common Linux desktop surface: GTK 2/3/4,
-GNOME Shell, Cinnamon, Unity, xfwm4, Metacity, Openbox, labwc and Plank.
+decorations and 195 matching Kvantum themes for Qt apps. Each theme covers
+every common Linux desktop surface: GTK 2/3/4, GNOME Shell, Cinnamon, Unity,
+xfwm4, Metacity, Openbox, labwc, Plank and Qt.
 
 These are the **built themes**, ready to drop into `~/.themes`. They are
 generated from the
@@ -47,6 +48,15 @@ xfconf-query -c xfwm4 -p /general/theme -s "Celestial-Aqua-Dark-hdpi"
 Selecting an `-hdpi` folder as your GTK theme would leave you with window
 borders and no styling at all.
 
+### The `Kvantum/` folder
+
+`Kvantum/` holds a matching Qt theme for each of the 195 themes — same accent,
+same three modes. Qt apps don't read GTK themes, so without these they stay on
+whatever style Qt defaults to while everything else follows your colour.
+
+They install to their own location, not into `~/.themes` (see below). There is
+no `-hdpi` tier — Kvantum is vector-based and scales by itself.
+
 ## Install
 
 Pick whichever colours you want (the repo is large — you don't need all of it).
@@ -72,6 +82,21 @@ appearance settings, or:
 gsettings set org.gnome.desktop.interface gtk-theme "Celestial-Emerald-Dark"
 gsettings set org.gnome.desktop.wm.preferences theme "Celestial-Emerald-Dark"
 ```
+
+### Qt apps
+
+Copy the matching Kvantum theme into place, then select it once:
+
+```bash
+mkdir -p ~/.config/Kvantum
+cp -r Kvantum/Celestial-Emerald-Dark ~/.config/Kvantum/
+
+sudo pacman -S kvantum        # Arch
+kvantummanager                # pick Celestial-Emerald-Dark, then Use this theme
+```
+
+System-wide the destination is `/usr/share/Kvantum/` instead. Qt apps then
+follow the same accent as GTK.
 
 ## Colours
 
