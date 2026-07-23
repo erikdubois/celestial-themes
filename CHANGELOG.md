@@ -1,5 +1,44 @@
 # Changelog
 
+## 2026.07.23
+
+### What Changed
+
+- Corrected the README's description of the `-hdpi` / `-xhdpi` folders. They
+  were documented as full theme variants ("585 themes", "use a `-hdpi` variant
+  on HiDPI displays"), but they contain nothing except `xfwm4/` — no
+  `index.theme`, no GTK. A user selecting one as their GTK theme would get
+  window borders and no styling. Verified against upstream `install.sh`: this
+  is the intended Celestial convention, not a broken render, so the fix belongs
+  in the documentation.
+- Reworded the 65 `pkgdesc` lines, which carried the same "three DPI tiers"
+  implication.
+- Added a `.gitignore` — the repo had none, so anything landing in `.claude/`
+  would have been committed.
+
+### Technical Details
+
+- The count is now stated as 195 themes plus 390 companion folders, instead of
+  585 themes. The README explains why the split exists: xfwm4 draws decorations
+  from fixed-size PNGs that need a pre-render per display scale, while every
+  other surface is CSS or vector and scales itself.
+- The HiDPI section gives the actual usage — keep the normal theme, point only
+  the window manager style at the companion folder
+  (`xfconf-query -c xfwm4 -p /general/theme -s "…-hdpi"`).
+- Verification run alongside the edit: the 65 `pkgname` entries, 65
+  `package_*` functions and 65 `_install_family` tokens all agree, and all
+  65 x 9 = 585 folders they name exist on disk with no folder left unclaimed by
+  a package.
+- `pkgver` / `pkgrel` deliberately untouched — documentation only, no rebuild
+  needed.
+
+### Files Modified
+
+- `README.md`
+- `PKGBUILD`
+- `.gitignore` (new)
+- `CHANGELOG.md`
+
 ## 2026.07.22
 
 ### What Changed

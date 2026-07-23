@@ -1,0 +1,9 @@
+.claude/
+
+# makepkg build artifacts (build.sh builds in /tmp, but guard against
+# stray in-place `makepkg` runs leaving these behind)
+src/
+pkg/
+celestial-themes/
+*.pkg.tar.zst
+*.log

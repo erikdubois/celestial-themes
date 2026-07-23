@@ -1,9 +1,9 @@
 # celestial-themes
 
 A large family of ready-to-install GTK desktop themes — **65 named colours ×
-3 modes × 3 DPI tiers = 585 themes** — covering every common Linux desktop
-surface: GTK 2/3/4, GNOME Shell, Cinnamon, Unity, xfwm4, Metacity, Openbox,
-labwc and Plank.
+3 modes = 195 themes**, plus 390 companion folders carrying HiDPI xfwm4
+decorations. Each theme covers every common Linux desktop surface: GTK 2/3/4,
+GNOME Shell, Cinnamon, Unity, xfwm4, Metacity, Openbox, labwc and Plank.
 
 These are the **built themes**, ready to drop into `~/.themes`. They are
 generated from the
@@ -15,15 +15,9 @@ rendering every variant. The tooling that produces them lives separately in
 
 ## What's in a theme
 
-Each colour ships in three modes and three DPI tiers:
-
-| | standard | `-hdpi` | `-xhdpi` |
-|---|---|---|---|
-| **standard** (dark) | `Celestial-Aqua` | `Celestial-Aqua-hdpi` | `Celestial-Aqua-xhdpi` |
-| **Dark** | `Celestial-Aqua-Dark` | `Celestial-Aqua-Dark-hdpi` | `Celestial-Aqua-Dark-xhdpi` |
-| **Light** | `Celestial-Aqua-Light` | `Celestial-Aqua-Light-hdpi` | `Celestial-Aqua-Light-xhdpi` |
-
-Every theme folder contains the surfaces for that variant:
+Each colour ships in three modes — `Celestial-Aqua` (dark),
+`Celestial-Aqua-Dark` and `Celestial-Aqua-Light`. Those are the folders you
+select as your theme, and each one contains every surface:
 
 ```
 cinnamon/  gnome-shell/  gtk-2.0/  gtk-3.0/  gtk-4.0/
@@ -31,9 +25,31 @@ labwc/  metacity-1/  openbox-3/  plank/  unity/  xfwm4/
 index.theme
 ```
 
+### The `-hdpi` and `-xhdpi` folders
+
+Every mode also has `-hdpi` and `-xhdpi` companions
+(`Celestial-Aqua-Dark-hdpi`, …). **These are not themes** — following the
+upstream Celestial convention they contain nothing but an `xfwm4/` folder, and
+no `index.theme`.
+
+The reason: xfwm4 draws its window decorations from fixed-size PNGs, so they
+have to be pre-rendered per display scale. Every other surface (GTK, GNOME
+Shell, Cinnamon, Openbox, labwc) is CSS or vector and scales by itself.
+
+So on a HiDPI / 4K display you don't switch to them — you keep the normal
+theme and point **only the window manager style** at the companion folder. On
+XFCE:
+
+```bash
+xfconf-query -c xfwm4 -p /general/theme -s "Celestial-Aqua-Dark-hdpi"
+```
+
+Selecting an `-hdpi` folder as your GTK theme would leave you with window
+borders and no styling at all.
+
 ## Install
 
-Pick whichever colours you want (the repo is large — you don't need all 585).
+Pick whichever colours you want (the repo is large — you don't need all of it).
 
 ```bash
 # all of them
@@ -44,6 +60,9 @@ cp -r Celestial-* ~/.themes/
 cp -r Celestial-Emerald Celestial-Emerald-Dark Celestial-Crimson-Light ~/.themes/
 ```
 
+Copy the matching `-hdpi` / `-xhdpi` folder too if you run xfwm4 on a HiDPI
+display.
+
 For a system-wide install, copy into `/usr/share/themes/` instead (needs root).
 
 Then select the theme — e.g. with GNOME Tweaks, `lxappearance`, your DE's
@@ -53,9 +72,6 @@ appearance settings, or:
 gsettings set org.gnome.desktop.interface gtk-theme "Celestial-Emerald-Dark"
 gsettings set org.gnome.desktop.wm.preferences theme "Celestial-Emerald-Dark"
 ```
-
-Use a `-hdpi` or `-xhdpi` variant on HiDPI / 4K displays where the standard
-assets look too small.
 
 ## Colours
 
