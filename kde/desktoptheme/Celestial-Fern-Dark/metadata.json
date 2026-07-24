@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Fern Dark standard theme",
+        "Id": "Celestial-Fern-Dark",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Fern Dark",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

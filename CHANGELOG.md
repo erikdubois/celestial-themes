@@ -1,5 +1,42 @@
 # Changelog
 
+## 2026.07.24
+
+### What Changed
+
+- Each colour package now also installs **KDE Plasma** theming — a colour
+  scheme, a global theme, a desktop theme and an Aurorae window decoration for
+  every mode — alongside the existing GTK and Kvantum themes. Bumped `pkgrel`
+  to `04` and updated the top-level `pkgdesc`.
+- Documented the new KDE Plasma delivery in the README (source layout →
+  install paths, how to apply via System Settings → Global Theme).
+
+### Technical Details
+
+- `_install_family()` gained a guarded KDE block: for each of the three modes it
+  installs, when present, `kde/color-schemes/<scheme>.colors` →
+  `/usr/share/color-schemes`, `kde/look-and-feel/com.github.zquestz.<scheme>` →
+  `/usr/share/plasma/look-and-feel`, `kde/desktoptheme/<scheme>` →
+  `/usr/share/plasma/desktoptheme`, and `kde/aurorae/<scheme>` →
+  `/usr/share/aurorae/themes`. Every path is `[[ -d ]]`/`[[ -f ]]`-guarded, so
+  the package still builds cleanly before the `kde/` tree has been populated
+  from a render — the KDE artifacts activate once that content lands.
+- The KDE tree is produced by `celestial-theme-forge` (its `render-all.sh` now
+  runs `src/kde/render.sh`) and snapshotted into this repo's `kde/` folder; the
+  install layout mirrors that source tree one colour slice at a time.
+- The stock `sea`/`aliz`/`azul`/`pueril` packages already carry
+  `conflicts=('celestial-gtk-theme')`, which now also covers the shared Plasma
+  paths those four ship upstream.
+- Functionally verified `_install_family` against real rendered output: driving
+  it for `Crimson` installs exactly its three modes into all four Plasma path
+  families and slices no other colour.
+
+### Files Modified
+
+- `PKGBUILD`
+- `README.md`
+- `CHANGELOG.md`
+
 ## 2026.07.23
 
 ### What Changed

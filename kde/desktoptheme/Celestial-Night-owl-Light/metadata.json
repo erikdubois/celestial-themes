@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Night owl Light standard theme",
+        "Id": "Celestial-Night-owl-Light",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Night owl Light",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

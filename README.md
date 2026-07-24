@@ -4,7 +4,9 @@ A large family of ready-to-install desktop themes — **65 named colours ×
 3 modes = 195 themes**, plus 390 companion folders carrying HiDPI xfwm4
 decorations and 195 matching Kvantum themes for Qt apps. Each theme covers
 every common Linux desktop surface: GTK 2/3/4, GNOME Shell, Cinnamon, Unity,
-xfwm4, Metacity, Openbox, labwc, Plank and Qt.
+xfwm4, Metacity, Openbox, labwc, Plank and Qt — and, for KDE Plasma, a matching
+colour scheme, global theme, desktop theme and Aurorae window decoration per
+variant (see [KDE Plasma](#kde-plasma) below).
 
 These are the **built themes**, ready to drop into `~/.themes`. They are
 generated from the
@@ -97,6 +99,25 @@ kvantummanager                # pick Celestial-Emerald-Dark, then Use this theme
 
 System-wide the destination is `/usr/share/Kvantum/` instead. Qt apps then
 follow the same accent as GTK.
+
+## KDE Plasma
+
+Every colour also ships native KDE Plasma theming, delivered from the repo's
+`kde/` tree into the standard Plasma locations:
+
+| Artifact | Repo source | Installed to |
+|----------|-------------|--------------|
+| Colour scheme | `kde/color-schemes/Celestial-<Colour>[-Dark\|-Light].colors` | `/usr/share/color-schemes/` |
+| Global theme | `kde/look-and-feel/com.github.zquestz.Celestial-<Colour>…/` | `/usr/share/plasma/look-and-feel/` |
+| Desktop theme | `kde/desktoptheme/Celestial-<Colour>…/` | `/usr/share/plasma/desktoptheme/` |
+| Window decoration | `kde/aurorae/Celestial-<Colour>…/` | `/usr/share/aurorae/themes/` |
+
+Pick a variant under **System Settings → Global Theme**; it sets the colour
+scheme, Kvantum widget style, Celestial Aurorae decorations, Papirus icons and a
+Celestial splash. The generated (non-stock) colours leave your current wallpaper
+untouched, since they ship no per-colour wallpaper package. Qt widget styling
+still comes from the matching `Kvantum/` theme — set it once in Kvantum Manager
+(a global theme can select *Kvantum* but not *which* Celestial variant).
 
 ## Colours
 

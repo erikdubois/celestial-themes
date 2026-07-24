@@ -70,8 +70,8 @@ pkgname=(
   celestial-warm-pink
 )
 pkgver=26.07
-pkgrel=02
-pkgdesc="Celestial GTK + Kvantum themes recoloured with the named Arc palette"
+pkgrel=05
+pkgdesc="Celestial GTK, Kvantum and KDE Plasma themes recoloured with the named Arc palette"
 arch=('any')
 url="https://github.com/erikdubois/celestial-themes"
 license=('GPL3')
@@ -104,6 +104,32 @@ _install_family() {
     d="Celestial-${token}${mode}"
     if [[ -d "${src}/Kvantum/${d}" ]]; then
       cp -r "${src}/Kvantum/${d}" "${pkgdir}/usr/share/Kvantum/"
+    fi
+  done
+
+  # KDE Plasma artifacts (color scheme, global theme, desktop theme, window
+  # decoration) for each of the three modes. Populated from the checkout's
+  # src/kde into this repo's kde/ tree (see README). Every path is guarded so
+  # the package still builds cleanly before the KDE render has been run.
+  local scheme lnf
+  for mode in "" "-Dark" "-Light"; do
+    scheme="Celestial-${token}${mode}"
+    lnf="com.github.zquestz.${scheme}"
+    if [[ -f "${src}/kde/color-schemes/${scheme}.colors" ]]; then
+      install -Dm644 "${src}/kde/color-schemes/${scheme}.colors" \
+        "${pkgdir}/usr/share/color-schemes/${scheme}.colors"
+    fi
+    if [[ -d "${src}/kde/look-and-feel/${lnf}" ]]; then
+      install -dm755 "${pkgdir}/usr/share/plasma/look-and-feel"
+      cp -r "${src}/kde/look-and-feel/${lnf}" "${pkgdir}/usr/share/plasma/look-and-feel/"
+    fi
+    if [[ -d "${src}/kde/desktoptheme/${scheme}" ]]; then
+      install -dm755 "${pkgdir}/usr/share/plasma/desktoptheme"
+      cp -r "${src}/kde/desktoptheme/${scheme}" "${pkgdir}/usr/share/plasma/desktoptheme/"
+    fi
+    if [[ -d "${src}/kde/aurorae/${scheme}" ]]; then
+      install -dm755 "${pkgdir}/usr/share/aurorae/themes"
+      cp -r "${src}/kde/aurorae/${scheme}" "${pkgdir}/usr/share/aurorae/themes/"
     fi
   done
 }

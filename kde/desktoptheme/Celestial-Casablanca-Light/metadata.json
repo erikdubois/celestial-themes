@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Casablanca Light standard theme",
+        "Id": "Celestial-Casablanca-Light",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Casablanca Light",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

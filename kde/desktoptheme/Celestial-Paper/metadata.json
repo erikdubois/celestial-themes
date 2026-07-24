@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Paper standard theme",
+        "Id": "Celestial-Paper",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Paper",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

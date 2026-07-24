@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Blueberry Dark standard theme",
+        "Id": "Celestial-Blueberry-Dark",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Blueberry Dark",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

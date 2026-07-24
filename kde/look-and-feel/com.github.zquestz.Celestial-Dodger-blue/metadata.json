@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Celestial Dodger blue global theme",
+        "Id": "com.github.zquestz.Celestial-Dodger-blue",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Dodger blue",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Light blue surfn Dark standard theme",
+        "Id": "Celestial-Light-blue-surfn-Dark",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Light blue surfn Dark",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

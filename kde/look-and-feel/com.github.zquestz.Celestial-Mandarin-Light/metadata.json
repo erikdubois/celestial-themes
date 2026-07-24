@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Celestial Mandarin Light global theme",
+        "Id": "com.github.zquestz.Celestial-Mandarin-Light",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Mandarin Light",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}
