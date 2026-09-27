@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026.09.27
+
+### What Changed
+
+- Every colour package now also ships its **SDDM login themes** (standard, Dark,
+  Light) to `/usr/share/sddm/themes/Celestial-<Colour>[-Dark|-Light]/`. Upstream
+  celestial-gtk-theme added them in 1.5.2; celestial-theme-forge renders them for
+  all colours and `stage-kde.sh` now stages them into `kde/sddm/`.
+
+### Technical Details
+
+- `_install_family` gains a guarded `kde/sddm/<scheme>` copy, same pattern as the
+  aurorae block, so the package still builds before `kde/sddm/` is staged.
+- No login background is bundled: the palette is baked into the QML and the
+  greeter uses the plain colour background. Upstream's wallpaper is only added
+  by its own `install.sh --sddm`, and only for the stock four.
+- No new file conflict with `celestial-gtk-theme`: its package does not pass
+  `--sddm`.
+
+### Files Modified
+
+- `PKGBUILD`
+- `README.md`
+- `CHANGELOG.md`
+
 ## 2026.07.24
 
 ### What Changed

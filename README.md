@@ -111,6 +111,7 @@ Every colour also ships native KDE Plasma theming, delivered from the repo's
 | Global theme | `kde/look-and-feel/com.github.zquestz.Celestial-<Colour>…/` | `/usr/share/plasma/look-and-feel/` |
 | Desktop theme | `kde/desktoptheme/Celestial-<Colour>…/` | `/usr/share/plasma/desktoptheme/` |
 | Window decoration | `kde/aurorae/Celestial-<Colour>…/` | `/usr/share/aurorae/themes/` |
+| SDDM login theme | `kde/sddm/Celestial-<Colour>…/` | `/usr/share/sddm/themes/` |
 
 Pick a variant under **System Settings → Global Theme**; it sets the colour
 scheme, Kvantum widget style, Celestial Aurorae decorations, Papirus icons and a

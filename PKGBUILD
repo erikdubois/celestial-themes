@@ -131,6 +131,12 @@ _install_family() {
       install -dm755 "${pkgdir}/usr/share/aurorae/themes"
       cp -r "${src}/kde/aurorae/${scheme}" "${pkgdir}/usr/share/aurorae/themes/"
     fi
+    # SDDM login theme (upstream 1.5.2+). Palette is baked in; no bundled
+    # background image, so it uses the plain colour background.
+    if [[ -d "${src}/kde/sddm/${scheme}" ]]; then
+      install -dm755 "${pkgdir}/usr/share/sddm/themes"
+      cp -r "${src}/kde/sddm/${scheme}" "${pkgdir}/usr/share/sddm/themes/"
+    fi
   done
 }
 
