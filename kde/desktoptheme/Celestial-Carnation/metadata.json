@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Carnation standard theme",
+        "Id": "Celestial-Carnation",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Carnation",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

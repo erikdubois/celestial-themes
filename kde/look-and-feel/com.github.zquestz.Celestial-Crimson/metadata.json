@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Celestial Crimson global theme",
+        "Id": "com.github.zquestz.Celestial-Crimson",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Crimson",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

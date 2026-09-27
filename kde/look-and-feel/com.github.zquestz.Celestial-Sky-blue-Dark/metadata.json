@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Celestial Sky blue Dark global theme",
+        "Id": "com.github.zquestz.Celestial-Sky-blue-Dark",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Sky blue Dark",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

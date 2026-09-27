@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Celestial Botticelli global theme",
+        "Id": "com.github.zquestz.Celestial-Botticelli",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Botticelli",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

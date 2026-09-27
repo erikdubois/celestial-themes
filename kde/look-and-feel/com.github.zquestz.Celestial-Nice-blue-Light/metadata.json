@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Celestial Nice blue Light global theme",
+        "Id": "com.github.zquestz.Celestial-Nice-blue-Light",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Nice blue Light",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

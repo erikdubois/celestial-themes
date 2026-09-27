@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Azure dodger blue Light standard theme",
+        "Id": "Celestial-Azure-dodger-blue-Light",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Azure dodger blue Light",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Warm pink standard theme",
+        "Id": "Celestial-Warm-pink",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Warm pink",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}

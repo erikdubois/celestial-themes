@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "zquestz"
+            }
+        ],
+        "Category": "",
+        "Description": "Dark panel for the Celestial Carolina blue Dark standard theme",
+        "Id": "Celestial-Carolina-blue-Dark",
+        "License": "GPL-3.0-or-later",
+        "Name": "Celestial Carolina blue Dark",
+        "Website": "https://github.com/zquestz/celestial-gtk-theme"
+    }
+}
