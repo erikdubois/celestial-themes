@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Celestial-Indigo
+Comment=A dark modern design theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Celestial-Indigo
+MetacityTheme=Celestial-Indigo
+IconTheme=Papirus
+CursorTheme=Celestial
+ButtonLayout=menu:minimize,maximize,close

@@ -1,8 +1,8 @@
 # celestial-themes
 
-A large family of ready-to-install desktop themes — **65 named colours ×
-3 modes = 195 themes**, plus 390 companion folders carrying HiDPI xfwm4
-decorations and 195 matching Kvantum themes for Qt apps. Each theme covers
+A large family of ready-to-install desktop themes — **66 named colours ×
+3 modes = 198 themes**, plus 396 companion folders carrying HiDPI xfwm4
+decorations and 198 matching Kvantum themes for Qt apps. Each theme covers
 every common Linux desktop surface: GTK 2/3/4, GNOME Shell, Cinnamon, Unity,
 xfwm4, Metacity, Openbox, labwc, Plank and Qt — and, for KDE Plasma, a matching
 colour scheme, global theme, desktop theme and Aurorae window decoration per
@@ -52,7 +52,7 @@ borders and no styling at all.
 
 ### The `Kvantum/` folder
 
-`Kvantum/` holds a matching Qt theme for each of the 195 themes — same accent,
+`Kvantum/` holds a matching Qt theme for each of the 198 themes — same accent,
 same three modes. Qt apps don't read GTK themes, so without these they stay on
 whatever style Qt defaults to while everything else follows your colour.
 
@@ -122,7 +122,7 @@ still comes from the matching `Kvantum/` theme — set it once in Kvantum Manage
 
 ## Colours
 
-65 named accents:
+66 named accents:
 
 ```
 Aliz              Aqua              Archlinux-blue    Arcolinux-blue
@@ -132,22 +132,22 @@ Carnation         Carolina-blue     Casablanca        Cornflower-blue
 Crimson           Darkish           Dawn              Denim
 Dodger-blue       Dracul            Emerald           Evopop
 Fern              Fire              Froly             Havelock
-Hibiscus          Jasmine           Light-blue-grey   Light-blue-surfn
-Light-salmon      Mandarin          Mandy             Mantis
-Medium-blue       Neon-blue         Niagara           Nice-blue
-Night-owl         Numix             Orchid            Pale-grey
-Paper             Pink              Polo              Pueril
-Punch             Purpley           Red-orange        Red-violet
-Rusty-orange      Sea               Sky-blue          Slateblue
-Slate-grey        Smoke             Soft-blue         Tacao
-Tangerine         Tory              Twilight          Vampire
-Warm-pink
+Hibiscus          Indigo            Jasmine           Light-blue-grey
+Light-blue-surfn  Light-salmon      Mandarin          Mandy
+Mantis            Medium-blue       Neon-blue         Niagara
+Nice-blue         Night-owl         Numix             Orchid
+Pale-grey         Paper             Pink              Polo
+Pueril            Punch             Purpley           Red-orange
+Red-violet        Rusty-orange      Sea               Sky-blue
+Slateblue         Slate-grey        Smoke             Soft-blue
+Tacao             Tangerine         Tory              Twilight
+Vampire           Warm-pink
 ```
 
 ## Icons
 
-The themes reference **Papirus** icons (`Papirus-Dark` for the dark/standard
-variants). Install Papirus separately for the intended look:
+The themes reference **Papirus** icons (`Papirus` for the standard,
+`Papirus-Dark` for the dark and `Papirus-Light` for the light variants). Install Papirus separately for the intended look:
 
 ```bash
 sudo pacman -S papirus-icon-theme        # Arch

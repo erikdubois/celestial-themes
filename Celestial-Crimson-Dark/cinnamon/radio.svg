@@ -11,7 +11,7 @@
        cx="8"
        cy="8"
        r="7"
-       style="fill:#4f0917;stroke:none" />
+       style="fill:#dc143c;stroke:none" />
     <!-- Inner dot -->
     <circle
        cx="8"

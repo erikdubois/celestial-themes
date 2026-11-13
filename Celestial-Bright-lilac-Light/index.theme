@@ -7,6 +7,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Celestial-Bright-lilac-Light
 MetacityTheme=Celestial-Bright-lilac-Light
-IconTheme=Papirus-Dark
+IconTheme=Papirus-Light
 CursorTheme=Celestial
 ButtonLayout=menu:minimize,maximize,close

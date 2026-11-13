@@ -1,5 +1,32 @@
 # Changelog
 
+## 2026.11.13
+
+### What Changed
+
+- All themes re-rendered from upstream **celestial-gtk-theme 1.8.2** (was 1.7.2): GNOME Shell 51 and
+  Cinnamon 6.8 styling, SDDM login themes that load again on Plasma 6.8, slimmer Kvantum scrollbars and
+  sliders, and an icon theme per mode (`Papirus`, `Papirus-Dark`, `Papirus-Light` instead of
+  `Papirus-Dark` for all three).
+- New colour **Indigo** (`celestial-indigo`): 66 colours, 198 themes.
+
+### Technical Details
+
+- Rendered with celestial-theme-forge's new `regenerate.sh` from the `erikdubois/celestial-gtk-theme` fork,
+  synced to upstream 1.8.2 (old state tagged `kiro-1.7.2`).
+- Indigo was already in the forge's colour map and its KDE files were already staged; it had never had a
+  GTK/Kvantum render or a package. Added to `pkgname` and as `package_celestial-indigo()`.
+- 3282 of the 3294 re-rendered PNGs were pixel-identical to the committed ones (re-encoded only) and were
+  restored to keep binary churn out of history; the 12 kept are the Crimson and Purpley labwc close-hover
+  buttons.
+
+### Files Modified
+
+- `Celestial-*/` (gtk-3.0, gtk-4.0, gnome-shell, cinnamon, index.theme, 12 labwc PNGs), `Celestial-Indigo*/` (new)
+- `Kvantum/` (all colours), `Kvantum/Celestial-Indigo*/` (new)
+- `kde/sddm/`
+- `PKGBUILD`, `README.md`, `CHANGELOG.md`
+
 ## 2026.09.27
 
 ### What Changed

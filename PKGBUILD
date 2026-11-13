@@ -32,6 +32,7 @@ pkgname=(
   celestial-froly
   celestial-havelock
   celestial-hibiscus
+  celestial-indigo
   celestial-jasmine
   celestial-light-blue-grey
   celestial-light-blue-surfn
@@ -291,6 +292,11 @@ package_celestial-havelock() {
 package_celestial-hibiscus() {
   pkgdesc="Celestial Hibiscus GTK and Kvantum theme - dark, Dark and Light, plus HiDPI xfwm4 decorations"
   _install_family "Hibiscus"
+}
+
+package_celestial-indigo() {
+  pkgdesc="Celestial Indigo GTK and Kvantum theme - dark, Dark and Light, plus HiDPI xfwm4 decorations"
+  _install_family "Indigo"
 }
 
 package_celestial-jasmine() {
