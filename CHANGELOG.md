@@ -9,6 +9,8 @@
   sliders, and an icon theme per mode (`Papirus`, `Papirus-Dark`, `Papirus-Light` instead of
   `Papirus-Dark` for all three).
 - New colour **Indigo** (`celestial-indigo`): 66 colours, 198 themes.
+- The KDE Plasma global themes now set the **Surfn-Kiro** icon theme instead of Papirus. Papirus is only
+  an optional dependency, so on a Plasma without it the global theme pointed at a missing icon theme.
 
 ### Technical Details
 
@@ -16,6 +18,9 @@
   synced to upstream 1.8.2 (old state tagged `kiro-1.7.2`).
 - Indigo was already in the forge's colour map and its KDE files were already staged; it had never had a
   GTK/Kvantum render or a package. Added to `pkgname` and as `package_celestial-indigo()`.
+- Surfn-Kiro: `[kdeglobals][Icons] Theme=` in all 198 `kde/look-and-feel/*/contents/defaults`; the forge's
+  `prepare-celestial.py` now patches `src/kde/render.sh` the same way, so future renders keep it. The
+  GTK `index.theme` files keep upstream's Papirus.
 - 3282 of the 3294 re-rendered PNGs were pixel-identical to the committed ones (re-encoded only) and were
   restored to keep binary churn out of history; the 12 kept are the Crimson and Purpley labwc close-hover
   buttons.
@@ -24,7 +29,7 @@
 
 - `Celestial-*/` (gtk-3.0, gtk-4.0, gnome-shell, cinnamon, index.theme, 12 labwc PNGs), `Celestial-Indigo*/` (new)
 - `Kvantum/` (all colours), `Kvantum/Celestial-Indigo*/` (new)
-- `kde/sddm/`
+- `kde/sddm/`, `kde/look-and-feel/*/contents/defaults`
 - `PKGBUILD`, `README.md`, `CHANGELOG.md`
 
 ## 2026.09.27

@@ -146,8 +146,10 @@ Vampire           Warm-pink
 
 ## Icons
 
-The themes reference **Papirus** icons (`Papirus` for the standard,
-`Papirus-Dark` for the dark and `Papirus-Light` for the light variants). Install Papirus separately for the intended look:
+The GTK themes reference **Papirus** icons (`Papirus` for the standard,
+`Papirus-Dark` for the dark and `Papirus-Light` for the light variants). The KDE
+Plasma global themes set **Surfn-Kiro**, Kiro's default icon theme, instead.
+For the GTK side, install Papirus separately for the intended look:
 
 ```bash
 sudo pacman -S papirus-icon-theme        # Arch
