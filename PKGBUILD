@@ -69,8 +69,8 @@ pkgname=(
   celestial-vampire
   celestial-warm-pink
 )
-pkgver=26.07
-pkgrel=06
+pkgver=26.09
+pkgrel=01
 pkgdesc="Celestial GTK, Kvantum and KDE Plasma themes recoloured with the named Arc palette"
 arch=('any')
 url="https://github.com/erikdubois/celestial-themes"
